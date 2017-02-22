@@ -1,0 +1,65 @@
+%clearfix{
+	&:after, &:before{
+		content:"";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+}
+@mixin clear{
+	&::before, &::after{
+		display: table;
+		content: '';
+	}
+	&:after{
+		clear: both;
+	}
+}
+@mixin container{
+	width:1100px;
+	margin: 0 auto;
+}
+
+@mixin inline($valign: top){
+	display: inline-block;
+	vertical-align: $valign;
+}
+
+@mixin border-radius($radius){
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+}
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+@mixin links ($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}
+ 
+@function rem($px){
+	@return $px/16px + 0rem;
+}

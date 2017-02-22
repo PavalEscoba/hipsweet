@@ -1,0 +1,29 @@
+@import "_misc/fonts";
+// variables
+
+$container-width: 1100px;
+$footer-height: 125px;
+$body-font: 'Helvetica', Arial, sans-serif;
+
+
+// adjustment
+@import "_misc/normalize";
+@import "_misc/mixins";
+@import "_misc/variables";
+@import "_misc/adjustment";
+
+// layout
+@import "_blocks/header";
+@import "libs/jquery.bxslider";
+@import "_blocks/slider";
+
+@import "_blocks/advantages";
+@import "_blocks/products";
+@import "_blocks/team";
+@import "_blocks/form";
+@import "_blocks/faq";
+@import "_blocks/map";
+
+
+@import "_blocks/footer";
+

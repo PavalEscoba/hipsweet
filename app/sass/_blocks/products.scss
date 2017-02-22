@@ -1,0 +1,73 @@
+.products{	
+	background-image:linear-gradient(to right, rgba(#ffac20, .9), rgba(#fdb704,.9));
+}
+.products__wrapper{
+	@include container;
+	padding-top: 120px;
+	padding-bottom: 90px;
+}
+
+.products__title{
+	text-align: center;
+	color: $title-color;
+	@include font(malina);
+	font-size: 62px;
+	margin-bottom: 30px;
+}
+.products__desc{
+	width: 70%;
+	color: #883213;
+	text-align: center;
+	margin: 0 15%;
+	
+}	
+.products__desc a{
+	color: #393939;
+	text-decoration: underline;
+}
+.products__list{
+	text-align: center;
+}
+.products__item{
+	@include inline(bottom);
+	width: 220px;
+}
+.product__item-icon{
+	width: 200px;
+	height: 180px;
+	background: url("../img/products/sweets.png") no-repeat;
+}
+.product__item-icon--cakes{
+	padding-top: 60px;
+	box-sizing: content-box;
+	background-position: 0 -730px;
+}
+.product__item-icon--donuts{
+	background-position: 0 -1152px;
+}
+.product__item-icon--rolls{
+	background-position: 0 -360px;
+}
+.product__item-icon--zephyr{
+	background-position: 0 -546px;
+}
+.product__item-icon--chocolate{
+	background-position: 0 -966px;
+}
+.product__item-icon--cupcakes{
+	background-position: 0 -1345px;
+}
+.product__item-icon--candies{
+	background-position: -10px -182px;
+}
+.product__item-title{
+	@include font(malina);
+	font-size: 32px;
+	text-align: center;
+	color: $title-color;
+	margin-bottom: 10px;
+}
+.product__item-text{
+	font-size: 14px;
+	color: $product-text;
+}

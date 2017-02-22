@@ -1,0 +1,14 @@
+.map{
+	@include container;
+}
+.map__display{
+	height: 536px;
+}
+.map__logo{
+	width: 50px;
+	height: auto;
+	vertical-align: middle;
+}
+.map__color{
+	color: #2d130b;
+}

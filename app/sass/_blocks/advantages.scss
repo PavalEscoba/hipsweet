@@ -1,0 +1,70 @@
+.advantages{
+	padding: 50px 0;
+	background-image: 
+		linear-gradient(to right,#c8c8c8, #e4e4e4 );
+}
+.advantages__wrapper{
+	@include container;
+	@include clear;
+	position: relative;
+}
+.advantages__left{
+
+	width: 49%;
+	margin-left: 63px;
+}
+.advantages__right{	
+	width: 45%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: -50px;
+	background: url('../img/person/suchef.png') left bottom no-repeat;
+	background-size: contain;
+}
+.advantages__right img{
+	max-width: 100%;
+	height: auto;
+	float: right;
+}
+.advantages__left-text{
+	margin-bottom: 70px;
+}
+.advantages__title{
+	@include font(malina);
+	color: $title-color;
+	font-size: 62px;
+}
+.advantages__desc{
+	width: 80%;
+}
+.advantages__left-item{
+	@include inline;
+	width:175px;	
+}
+
+.advantages__icon{
+	margin-bottom: 50px;
+	width: 120px;
+	height: 100px;
+	background:transparent url('../img/advantage/sprite.png') no-repeat;
+}
+.advantages__icon--hat{
+	background-position: 0 -92px;
+}
+.advantages__icon--leaf{
+	background-position: 0 0;
+}
+.advantages__icon--heart{
+	background-position: 0 -200px;
+}
+.advantages__img-title{	
+	@include font(malina);
+	font-size: 15px;
+	color: $title-color;
+}
+.advantages__img-pic{
+	margin-bottom: 50px;
+	max-width: 100%;
+	height: auto;
+}

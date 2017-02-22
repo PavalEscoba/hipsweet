@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaRegular.ttf'),
+         url('../fonts/HelveticaRegular.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+    font-family: 'Malina';
+    src: url('../fonts/Malina.ttf'),
+         url('../fonts/Malina.woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+@mixin font($style){
+    @if $style==regular{
+        font-family: 'Helvetica';
+    }
+  
+    @else if $style==malina{
+        font-family: 'Malina';
+    }
+}

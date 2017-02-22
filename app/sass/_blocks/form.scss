@@ -1,0 +1,97 @@
+.form{
+	@include container;
+}
+.form__wrapper{	
+	width: 80%;
+	margin: 0 auto;
+	background: transparent url("../img/bg/bg-chocolate.jpg");
+	border-radius: 30px;
+	margin-bottom: 110px;
+	position: relative;
+}
+.form__title{
+	width: 51%;
+	@include font(malina);
+	font-size: 64px;
+	color: #fff;
+	text-align: center;
+}
+.form__title-order{
+	
+	padding: 140px 0;
+}
+.form__inputs{
+	padding-left: 50px;
+	padding-top: 80px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 50%;
+	background: rgba(#000, .84);
+	border-radius: 0 30px 30px 0;
+	color: #fff;
+	font-size: 16px;
+}
+.form__inputs input{
+	display: block;
+	background: none;
+	border:none;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 40px;
+	color: #fff;
+	outline: none;
+	width: 80%;
+}
+.form .form__submit{
+	cursor: pointer;
+	width: 95px;
+	height: 95px;
+	border:none;
+	border-radius: 50%;
+	outline: none;
+	background:#ffb100 url('../img/form/submit.png') center center no-repeat;
+	position: absolute;
+	left: 100%;
+	top: 100%;
+	margin-top: -45px;
+	margin-left: -45px;	
+}
+.form__submit:hover{
+	outline: none;
+	background-color: #641a00;
+	background-image: url('../img/form/submit-hover.png');
+}
+.form__submit:active{
+	background-color: darken(#641a00, 10%);
+	outline: none;
+}
+.form__submit:visited{
+	outline: none;
+}
+#callback{
+ display: none;
+}
+.form__checkbox-order{
+	padding-left:20px;
+}
+.form__checkbox-order::before{	
+	content:"";
+	display: inline-block;
+	position: absolute;
+	left: 45px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #2d130b;
+	background-color: #fff;
+
+}
+input[type="checkbox"]:checked ~ .form__checkbox-order::before{
+	content:"\2713";
+	text-shadow: 1px 1px 1px #2d130b;
+	font-size: 20px;
+	color: #2d130b;
+	text-align: center;
+	line-height: 15px;
+}
+
